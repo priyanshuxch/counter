@@ -5,11 +5,11 @@ function App() {
   let [count, setCount] = useState(0)
 
   const addValue = function() {
-    setCount(count + 1)
+    setCount(prevCount => prevCount + 1)
   }
 
   const removeValue = function() {
-    setCount(count - 1)
+    setCount(prevCount => prevCount - 1)
   }
 
   return (
